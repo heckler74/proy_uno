@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 en Raya Web</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <main class="app-shell">
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Juego moderno</p>
+                <h1>3 en raya</h1>
+                <p>Disfruta una versión web dinámica con inteligencia de CPU y interfaz táctil.</p>
+            </div>
+            <div class="controls">
+                <label>
+                    <span>Modo</span>
+                    <select id="modeSelect">
+                        <option value="human">Jugador vs Jugador</option>
+                        <option value="cpu">Jugador vs CPU</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Tu símbolo</span>
+                    <select id="playerSymbol">
+                        <option value="X">X</option>
+                        <option value="O">O</option>
+                    </select>
+                </label>
+                <button id="restartBtn">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="board-card">
+            <div class="status-panel">
+                <div>
+                    <strong id="turnLabel">Turno: X</strong>
+                    <p id="message">Toca una casilla para comenzar.</p>
+                </div>
+                <div class="scoreboard">
+                    <span>X: <strong id="scoreX">0</strong></span>
+                    <span>O: <strong id="scoreO">0</strong></span>
+                    <span>Empates: <strong id="scoreDraw">0</strong></span>
+                </div>
+            </div>
+            <div class="grid" id="board">
+                <button class="cell" data-index="0"></button>
+                <button class="cell" data-index="1"></button>
+                <button class="cell" data-index="2"></button>
+                <button class="cell" data-index="3"></button>
+                <button class="cell" data-index="4"></button>
+                <button class="cell" data-index="5"></button>
+                <button class="cell" data-index="6"></button>
+                <button class="cell" data-index="7"></button>
+                <button class="cell" data-index="8"></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
