@@ -1,1 +1,2 @@
 Flask>=2.3
+streamlit>=1.25.0
